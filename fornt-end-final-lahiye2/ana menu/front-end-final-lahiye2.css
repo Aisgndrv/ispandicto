@@ -1,0 +1,186 @@
+.section-1-navbar-collapse {
+  color: #7f7f7f;
+}
+
+.section-1-navbar-collapse .section-1-nav-item {
+  text-align: center !important;
+}
+
+@media (max-width: 576px) {
+  .container-fluid {
+    width: 100% !important;
+  }
+  .container-fluid .section-1-line {
+    display: none;
+  }
+  .container-fluid .section-1-language {
+    display: none !important;
+  }
+  .section-1-nav-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50px !important;
+    font-size: 23px !important;
+  }
+  .section-1-nav-item .section-1-navbar-collapse {
+    padding: 0px 8px !important;
+  }
+  .section-1-language-respon {
+    display: block !important;
+    margin-left: auto !important;
+  }
+}
+
+.section-2 {
+  background-image: url(./backc9poiuyg.png);
+  height: 755px;
+  background-size: cover;
+}
+
+.section-2 .section-2-top-row {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.section-2 .section-2-input-text {
+  height: 42px;
+  width: 540px;
+  border-radius: 25px;
+  border: white;
+}
+
+.section-2 .section-2-search-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #8824d9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.section-2 .section-2-card {
+  padding: 0px 16px;
+}
+
+.section-2 .section-2-card .section-2-card-this {
+  width: 193px;
+  height: 107px;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.section-2 .section-2-bottom-card {
+  width: 391px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0px 8px;
+}
+
+.section-2 .myclass {
+  display: none;
+}
+
+.section-2 .myDiv {
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 14px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  background-color: white !important;
+  z-index: 1000;
+  width: 100%;
+  top: 10px;
+}
+
+.section-2 .myDiv a {
+  background: darkgrey;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.section-2 .mySearchInput {
+  border-right-color: white;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.section-2 .searchBtn {
+  background: unset !important;
+  border-radius: 0px 30px 30px 0px;
+  padding-right: 3px;
+  border-bottom-right-radius: 30px !important;
+  border-top-right-radius: 30px !important;
+}
+
+.section-2 .searchBtn i {
+  background: #8824d9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35px !important;
+  height: 35px !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .section-2 {
+    background-size: auto;
+    height: 100% !important;
+  }
+  .section-2 .section-2-top-row {
+    height: 202px;
+  }
+  .section-2 .section-2-top-row .section-2-h1 {
+    font-size: 40px !important;
+  }
+  .section-2 .section-2-inputtext {
+    width: 100% !important;
+  }
+  .section-2 .section-2-card-this {
+    width: 100% !important;
+  }
+  .section-2 .section-2-bottom-card {
+    width: 50% !important;
+  }
+  .section-3-container {
+    display: block !important;
+    width: 68% !important;
+    margin-top: 70px;
+  }
+  .section-3-container .section-3-iconlar {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=front-end-final-lahiye2.css.map */

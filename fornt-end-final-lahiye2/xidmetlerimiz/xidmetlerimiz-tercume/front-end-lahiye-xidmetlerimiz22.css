@@ -1,0 +1,129 @@
+.section-1-navbar-collapse {
+  color: #7f7f7f;
+}
+
+.section-1-navbar-collapse .section-1-nav-item {
+  text-align: center !important;
+}
+
+@media (max-width: 576px) {
+  .container-fluid {
+    width: 100% !important;
+  }
+  .container-fluid .section-1-line {
+    display: none;
+  }
+  .container-fluid .section-1-language {
+    display: none !important;
+  }
+  .section-1-nav-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50px !important;
+    font-size: 23px !important;
+  }
+  .section-1-nav-item .section-1-navbar-collapse {
+    padding: 0px 8px !important;
+  }
+  .section-1-language-respon {
+    display: block !important;
+    margin-left: auto !important;
+  }
+}
+
+.section-1 {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  background: white;
+}
+
+.section-2 {
+  background-image: url(./bizi-backgrou.png);
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 67px;
+  margin-bottom: 85px;
+}
+
+.section-3-p {
+  width: 88%;
+}
+
+@media (max-width: 576px) {
+  .section-2-container {
+    width: 100% !important;
+  }
+  .section-3-img {
+    display: none !important;
+  }
+  .section-3-row {
+    width: 100% !important;
+  }
+  .section-3-row .section-3-words {
+    width: 100% !important;
+  }
+  .section-3-cards {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .section-3-cards .section-3-card-this {
+    width: 98% !important;
+    margin-bottom: 30px !important;
+  }
+  .section-4-container {
+    display: block !important;
+    width: 68% !important;
+    margin-top: 70px;
+  }
+  .section-4-container .section-4-iconlar {
+    text-align: center;
+  }
+  .section-3-ABC {
+    width: 100% !important;
+  }
+  .section-3-iconcard-chach {
+    display: block !important;
+  }
+  .section-3-iconcard-chach .section-3-iconcard {
+    width: 100% !important;
+  }
+}
+
+.zoom {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.1);
+}
+
+.section-3-iconcard {
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
+}
+
+.section-3-iconcard:hover {
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
+  background: -webkit-gradient(linear, left top, right top, from(#8926d9), color-stop(110%, #431667));
+  background: linear-gradient(to right, #8926d9 0%, #431667 110%);
+  color: white;
+}
+
+.section-3-iconcard:hover .section-3-icon-cach {
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
+  background: white !important;
+  color: #6a1fa6 !important;
+}
+/*# sourceMappingURL=front-end-lahiye-xidmetlerimiz22.css.map */

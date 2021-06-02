@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+        </script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+        integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+        crossorigin="anonymous" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Document</title>
+    <link rel="stylesheet" href="front-end-final-lahiye-sözlük.css">
+</head>
+
+<body>
+    <section class="section-1">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light " style="text-align: center;">
+                    <div class="container-fluid" style="width: 86%; padding: 0px 0px 0px 0px;">
+                        <a class="navbar-brand" href="#" style="display: flex; align-items: center;"><img
+                                src="./bizi-tani-logo.png" style="width: 40px; height: 40px;">
+                            <div class="section-1-line"
+                                style="opacity: 0.2; font-size: 18px; margin-right: inherit; margin-left: 25px;">|</div>
+                        </a>
+                        <form class=" section-1-language-respon" style="display: none;">
+                            <div style="display: flex; justify-content: space-around; width: 70px;">
+                                <p style="margin: 0px 0px 0px 0px !important; width: 30px; height: 25px; border-radius: 20%; background-color: #7520B9; color: white;"
+                                onclick="section1languageAz()" id="languageAz">Az</p>
+                            <a href="./sozluk-tercume/front-end-final-lahiye-sözlük22.html" style="text-decoration: none;">
+                                <p style="margin: 0px 0px 0px 0px !important; width: 30px; height: 25px; border-radius: 20%; color: black;"
+                                    onclick="section1languageEs()" id="languageEs">Es</p>
+                            </a>
+                            </div>
+                        </form>
+                        <button style="border: 1px solid white;" class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item section-1-nav-item" style="display: flex;">
+                                    <a class="nav-link active section-1-navbar-collapse section-nav-item-1 text-muted"
+                                        style="margin-left: 0px;  display: flex; align-items: center; align-self: center; padding: 0px 15px;"
+                                        id="barWord1" aria-current="page"
+                                        href="../ana menu/front-end-final-lahiye2.html">
+                                        Ana səhivə
+                                    </a>
+                                </li>
+                                <li class="nav-item section-1-nav-item" style="display: flex;">
+                                    <a class="nav-link active section-1-navbar-collapse section-nav-item-1 text-muted"
+                                        style="border-radius: 8%; display: flex; align-items: center; align-self: center; padding: 0px 15px;"
+                                        id="barWord2" aria-current="page" href="../xidmetlerimiz/front-end-lahiye-xidmetlerimiz.html">
+                                        Xidmətlərimiz
+                                    </a>
+                                </li>
+                                <li class="nav-item section-1-nav-item " style="display: flex; border-radius: 4px; ">
+                                    <a class="nav-link active section-1-navbar-collapse section-nav-item-1 text-muted"
+                                        style="border-radius: 8%; display: flex; align-items: center; align-self: center; padding: 0px 15px;"
+                                        id="barWord3" aria-current="page"
+                                        href="../bizi tani/front-final-lahiye-2-bizi-tanı.html">
+                                        Bizi tanı
+                                    </a>
+                                </li>
+                                <li class="nav-item section-1-nav-item" style="display: flex;">
+                                    <a class="nav-link active section-1-navbar-collapse section-nav-item-1 text-muted"
+                                        style="border-radius: 8%; display: flex; align-items: center; align-self: center; padding: 0px 15px;"
+                                        id="barWord4" aria-current="page"
+                                        href="../elaqe/front-end-final-lahiye-elaqe.html">
+                                        Əlaqə
+                                    </a>
+                                </li>
+                            </ul>
+                            <form class="d-flex section-1-language">
+                                <div style="display: flex; justify-content: space-around; width: 70px;">
+                                    <p style="margin: 0px 0px 0px 0px !important; width: 30px; height: 25px; border-radius: 20%; background-color: #7520B9; color: white;"
+                                        onclick="section1languageAz()" id="languageAz">Az</p>
+                                    <a href="./sozluk-tercume/front-end-final-lahiye-sözlük22.html" style="text-decoration: none;">
+                                        <p style="margin: 0px 0px 0px 0px !important; width: 30px; height: 25px; border-radius: 20%; color: black;"
+                                            onclick="section1languageEs()" id="languageEs">Es</p>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="container section-2-container"
+            style="color: white; font-size: 45px; font-weight: 600 !important; width: 60%;">
+            Lüğət
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="container" style="width: 100%; display: flex; justify-content: space-evenly;">
+            <div class="row d-flex justify-content-center section-3-row" style="width: 60%;">
+                <div class="section-3-words col-12 col-lg-8" style="width: 100%;">
+                    <div class="col-12 col-md-6 mb-3">
+                        <h3>Mövzu axtar</h3>
+                        <div style="box-shadow: 0 0 15px rgb(98 96 101 / 70%)"
+                            class="input-active shadow-big rounded-pill input-group mb-3 mb-lg-4 mt-3">
+                            <input type="text" class="form-control rounded-pill border-0" placeholder="Axtarın..." />
+                            <button class="btn InputIcon position-absolute end-0 me-1" type="button" style="
+                              background-color: #8824D9;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              border-radius: 50%;
+                              color: white;
+                              width: 30px;
+                              height: 30px;
+                              z-index: 10;
+                              right: 0;
+                              margin-right: 5px;
+                              margin-top: 3px;"
+                            >
+                            <i class="fas fa-search" style="font-size: 16px"></i>
+                        </div>
+                    </div>
+                    <div class="section-3-ABC" style="justify-content: space-between;">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist"
+                            style="justify-content: space-between; align-items: center;">
+                            <li class="nav-item section-3-button-1" role="presentation">
+                                <button class="nav-link active section-3-button-1"
+                                    style="padding: 3px 65px; border-radius: 22px !important;"
+                                    id="pills-home-tab section3libutton1" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">A1</button>
+                            </li>
+                            <li class="nav-item section-3-button-2" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab"
+                                    style="padding: 3px 65px; border-radius: 22px !important;" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">A2</button>
+                            </li>
+                            <li class="nav-item section-3-button-3" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab"
+                                    style="padding: 3px 65px; border-radius: 22px !important;" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">B1</button>
+                            </li>
+                            <li class="nav-item section-3-button-4" role="presentation">
+                                <button class="nav-link" id="pills-settings-tab"
+                                    style="padding: 3px 65px; border-radius: 22px !important;" data-bs-toggle="pill"
+                                    data-bs-target="#pills-settings" type="button" role="tab"
+                                    aria-controls="pills-settings" aria-selected="false">B2</button>
+                            </li>
+                            <li class="nav-item section-3-button-5" role="presentation">
+                                <button class="nav-link" id="pills-messages-tab"
+                                    style="padding: 3px 65px; border-radius: 22px !important;" data-bs-toggle="pill"
+                                    data-bs-target="#pills-messages" type="button" role="tab"
+                                    aria-controls="pills-messages" aria-selected="false">C1</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                
+                                <div class="section-3-cards row mt-3"
+                                    style="justify-content:space-between; padding: 6px;">
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./uz.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Üz
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">32 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./reqem.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Rəqəmlər
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">21 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./aile.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Ailə
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">38 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./heyvan.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Heyvan Adları
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">46 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./hava.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Hava
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">28 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./insan.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Insan Bədəni
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">26 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./reng.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Rənglər
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">15 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./qida.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Qida
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">24 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="section-3-cards row mt-3"
+                                    style="justify-content:space-between; padding: 6px;">
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./neqliyyat.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Nəqliyyat
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">48 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./yeniil.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Yeni il
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">52 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./ayaqlar.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Ayaqlaer
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">12 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./materiallar.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Materiallar
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">7 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./eller.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Əllər
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">12 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./elisleri.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Əl işləri
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">34 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./cimerlik.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Çimərlik
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">23 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./cografia.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Coğrafia
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">45 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="section-3-cards row mt-3"
+                                    style="justify-content:space-between; padding: 6px;">
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./gunes sistemi.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Günəş sistemi
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">26 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./yataqotaqi.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    yataq otağı
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">29 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./hesaratlar.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Həşəratlar
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">19 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./hamam.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Hamam
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">36 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-settings" role="tabpanel"
+                                aria-labelledby="pills-settings-tab">
+                                <div class="section-3-cards row mt-3"
+                                    style="justify-content:space-between; padding: 6px;">
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./metbec.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Mətbəx
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">27 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./olcu ve ceki.png" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Ölçü və çaki vahidləri
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">4 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./atcapma.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Atçapma
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">5 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./seher.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Şəhər
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">25 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-messages" role="tabpanel"
+                                aria-labelledby="pills-messages-tab">
+                                <div class="section-3-cards row mt-3"
+                                    style="justify-content:space-between; padding: 6px;">
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./metbuat.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Mətbuat
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">130 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-6 col-sm-12 mb-4 section-3-card-this"
+                                        style="width: 49%; padding: 0px 0px 0px 0px; overflow: hidden; border-radius: 7px; border: 1px solid #ECECEC; box-shadow: 0 .7rem 1rem rgba(0,0,0,.15)!important">
+                                        <div class="salalmlar" style="overflow: hidden;">
+                                            <img src="./muharibe.jpg" class="zoom"
+                                                style="border-top-right-radius: 5px; border-top-left-radius: 5px; height: 218px; width: 100%;">
+                                        </div>
+                                        <div class="card-body" style="padding: 0px 0px 0px 0px;">
+                                            <p class="card-text">
+                                            <div class="section-3-button"
+                                                style="display: flex; justify-content: center;">
+                                                <div class="section-3-card-button-this section-3-button-size"
+                                                    style="background: linear-gradient(to right, #8926D9 0%, #431667 110%);">
+                                                    Müharibə
+                                                </div>
+                                            </div>
+                                            <p style="text-align: center; opacity: 0.7; margin-top: 7px;">55 söz</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-3-img col-lg-4" style="width: 28.33333%;">
+                <img style="width: 100%; position: sticky; top: 1px;" src="./main-banner.3440360aa[oivj-9hf.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="container section-4-container"
+            style="display: flex; justify-content: space-between; height: 100px; width: 64%; align-items: flex-end;">
+            <p style="opacity: 0.7; text-align: center;">Ispanadicto © 2020 Bütün hüquqlar qorunur</p>
+            <div class="section-4-iconlar">
+                <i class="bi bi-facebook" style="height: 24px; width: 24px; padding: 8px 16px; font-size: 23px;"></i>
+                <i class="bi bi-instagram" style="height: 24px; width: 24px; padding: 8px 16px; font-size: 23px;"></i>
+                <i class="bi bi-twitter" style="height: 24px; width: 24px; padding: 8px 16px; font-size: 23px;"></i>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+    integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+    crossorigin="anonymous">
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+<script src="front-end-final-lahiye-sözlük.js"></script>
+</html>

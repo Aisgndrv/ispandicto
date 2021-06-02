@@ -1,0 +1,112 @@
+.section-1{
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  background: white;
+}
+
+.section-1-navbar-collapse {
+  color: #7f7f7f;
+  .section-1-nav-item {
+    text-align: center !important;
+  }
+}
+@media (max-width: 576px) {
+  .container-fluid {
+    width: 100% !important;
+    .section-1-line {
+      display: none;
+    }
+    .section-1-language {
+      display: none !important;
+    }
+  }
+  .section-1-nav-item {
+    justify-content: center;
+    height: 50px !important;
+    font-size: 23px !important;
+    .section-1-navbar-collapse {
+      padding: 0px 8px !important;
+    }
+  }
+  .section-1-language-respon {
+    display: block !important;
+    margin-left: auto !important;
+  }
+}
+.section-2 {
+  background-image: url(./bizi-backgrou.png);
+  height: 120px;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 67px;
+  margin-bottom: 85px;
+}
+.section-3-p {
+  width: 88%;
+}
+@media (max-width: 576px) {
+  .section-2-container {
+    width: 100% !important;
+  }
+  .section-2-img {
+    display: none !important;
+  }
+  .section-3-row {
+    width: 100% !important;
+    .section-3-words {
+      width: 100% !important;
+      .section-3-cards {
+        justify-content: center !important;
+        .section-3-card-this {
+          width: 98% !important;
+          margin-bottom: 30px !important;
+          height: 53% !important;
+          .section-3-card-body{
+            padding: 16px 0px !important;
+          }
+        }
+      }
+    }
+  }
+  .section-4-container {
+    display: block !important;
+    width: 68% !important;
+    margin-top: 70px;
+  }
+  }
+.section-ten-input {
+  text-align: -webkit-center;
+  .section-ten-input-this {
+    border-radius: 4px !important;
+    border: 1px solid white;
+    background-color: #F4F4F4 !important;
+  }
+  .section-ten-button {
+    padding: 5px 50px;
+    border-radius: 4px;
+    color: white !important;
+    background: linear-gradient(to right, #8926D9 0%, #431667 110%) !important;
+    transition: 0.5s;
+    &:hover {
+      border: 1px solid #ffdd33 !important;
+      transition: 0.5s !important;
+      background-color: #ffdd33 !important;
+    }
+  }
+}
+.section-3-iconcard{
+  transition: .3s !important;
+  &:hover{
+    transition: .3s !important;
+    background: linear-gradient(to right, #8926D9 0%, #431667 110%);
+    color: white;
+    .section-3-icon-cach{
+      transition: .3s !important;
+      background: white !important;
+      color: #6A1FA6 !important;
+    } 
+  }
+}
